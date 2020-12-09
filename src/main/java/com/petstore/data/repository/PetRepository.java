@@ -6,4 +6,5 @@ import com.petstore.data.model.Pet;
 
 public interface PetRepository extends JpaRepository<Pet, Integer> {
 
+    void deleteByName(String name);
 }

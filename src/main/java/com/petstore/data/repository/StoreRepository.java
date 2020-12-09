@@ -6,6 +6,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 public interface StoreRepository extends JpaRepository<Store, Integer> {
 // the JpaRepository comes with predefined method which helps us in the manipulation of data in the Store class.
 
-    Store findByName(String name);  // custom method is used to make a declearation and an implementation class is not need
+    Store findByName(String name);  // custom method is used to make a declaration and an implementation class is not need
 
+    void deleteByName(String name);
 }
